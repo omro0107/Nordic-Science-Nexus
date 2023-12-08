@@ -1,10 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+
 header {
+    object-fit: cover;
     width: 100%;
     height: 400px;
+    margin: 0;
     background-image: url('/img/gregoire-jeanneau-9sxeKzuCVoE-unsplash-min.jpg');
     background-size: cover;
 }
 
+/* Menu settings start */
+/* place menu at right bottom corner of header*/
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+    color: #fff;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'montserrat', 'open sans', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hamburger-icon {
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: block;
+        position: static;
+        color: #fff;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        font-size: 1rem;
+        font-family: 'montserrat', 'open sans', sans-serif;
+        font-weight: bold;
+    }
+}
+
+/* if possible, set this condition*/
+.current {
+    text-decoration-line: underline;
+    color: #daa520;
+}
+/* Menu settings end */
+
+a:link, 
+a:visited, 
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e7e5e;
+}
+
+main {
+    background-color: #f8f8f8;
+}
+
+.h1,
+.h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 footer {
     background-color: #001f3f;
+}
+
+h4,
+.social-media,
+.contact-info,
+.legal-info,
+#newsletter {
+    font-size: 16px;
+    font-family: 'open sans', sans-serif;
+    color: #fff;
+}
+
+.subscribe {
+    padding: 10px 40px;
+    background-color: #daa520;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'open sans', 'veranda', sans serif;
+    font-weight: bold;
+    color: #001f3f;
+}
+
+.subscribe:hover {
+    background-color: #2e7e5e;
+}
+
+input[type="email"] {
+    width: 200px;
+    padding: 14px;
+    border-radius: 15px;
 }
