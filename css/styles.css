@@ -1,12 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+@font-face {
+    src: url('/webfontkit/montserrat.woff2') format('woff2'),;
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: normal;
+}
 
+@font-face {
+    src: url('/webfontkit/playfairdisplay.woff2') format('woff2'),;
+    font-family: 'playfairdisplay';
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url('/webfontkit/opensans.woff2') format('woff2'),;
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+}
+
+/* HEADER SECTION */
 header {
     object-fit: cover;
     width: 100%;
-    height: 400px;
-    margin: 0;
+    height: 10em;
     background-image: url('/img/gregoire-jeanneau-9sxeKzuCVoE-unsplash-min.jpg');
     background-size: cover;
+}
+
+.logo {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 5px;
 }
 
 /* Menu settings start */
@@ -24,8 +54,8 @@ nav,
 nav a {
     display: block;
     padding: 10px 20px;
-    font-size: 1rem;
-    font-family: 'montserrat', 'open sans', sans-serif;
+    font-size: 1em;
+    font-family: 'montserrat', 'opensans', sans-serif;
     font-weight: bold;
     color: #fff;
 }
@@ -35,20 +65,21 @@ nav a {
 }
 
 @media (min-width: 600px) {
+
     nav {
         display: block;
         position: static;
         color: #fff;
-    }
+        }
 
     .hamburger-icon {
         display: none;
-    }
+        }
 
     nav a {
         display: inline-block;
-        font-size: 1rem;
-        font-family: 'montserrat', 'open sans', sans-serif;
+        font-size: 1em;
+        font-family: 'montserrat', 'opensans', sans-serif;
         font-weight: bold;
     }
 }
@@ -71,47 +102,156 @@ a:hover {
     color: #2e7e5e;
 }
 
+/* MAIN SECTION */
+
 main {
+    margin: 1em;
     background-color: #f8f8f8;
 }
 
-.h1,
-.h2 {
-    font-family: 'Playfair Display', serif;
+h1,
+h3 {
+    font-family: 'playfairdisplay', sans-serif;
+    font-weight: lighter;
+    color: #001f3f;
 }
 
-.p {
-    font-family: 'Open Sans', sans-serif;
+h2 {
+    font-family: 'playfairdisplay', sans-serif;
+    color: #001f3f;
 }
 
+p, .openinghours {
+    font-family: 'opensans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+.contain {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #daa520;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 500px;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	grid-gap: 20px;
+	min-height: 400px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.contribution {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.exhibitions,
+.explore,
+.contact, 
+.contribute {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw
+}
+
+.exhibitions {
+    top: 88%;
+}
+
+
+/* FOOTER SECTION */
 footer {
     background-color: #001f3f;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 h4,
 .social-media,
 .contact-info,
 .legal-info,
-#newsletter {
+.newsletter-form {
     font-size: 16px;
-    font-family: 'open sans', sans-serif;
+    font-family: 'opensans', sans-serif;
     color: #fff;
+    margin: 20px;
 }
 
-.subscribe {
+.social-media li, a {
+    display: flex;
+    align-items: center;
+}
+
+.social-media i.fa-brands {
+    font-size: 2em;
+}
+  
+.social-media p {
+    margin: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
     padding: 10px 40px;
     background-color: #daa520;
     cursor: pointer;
     border: none;
     border-radius: 15px;
     font-size: 16px;
-    font-family: 'open sans', 'veranda', sans serif;
+    font-family: 'opensans', 'verdana', 'sans serif';
     font-weight: bold;
     color: #001f3f;
 }
 
-.subscribe:hover {
+.subscribe-button:hover {
     background-color: #2e7e5e;
+    color: #fff;
 }
 
 input[type="email"] {
