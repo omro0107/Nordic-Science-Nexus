@@ -11,15 +11,7 @@
         The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nordic Science Nexus | Explore Together - Contact</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-<!--- ADD INFO-->
-        <meta property=“og:title” content= "Introduction to Open Graph">
-	    <meta property="og:url" content="https://www.example.com">
-	    <meta property="og:type" content="article">
-	    <meta property="og:image" content="https://res.cloudinary.com/image.jpg">
-
-
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
@@ -28,76 +20,84 @@
     </head>
     <body>
         <header>
-<!-- place anchor inside logo -->
-            <img src="/img/Logo.png" alt="Museum logo">
+            <a href="index.html"><img src="/img/Logo.png" alt="Museum logo" class="logo"></a>
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
             <nav>
                 <a href="index.html">HOME</a>
                 <a href="explore.html">EXPLORE</a>
                 <a href="exhibitions.html">EXHIBITIONS</a>
-                <a href="contribution.html">CONTRIBUTION</a>
+                <a href="contribution.html">CONTRIBUTE</a>
                 <a href="contact.html">CONTACT</a>
             </nav>
         </header>
         <main>
-            <section>
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Address: Nordic Science Nexus</p>
-                <p>Museumsveien 3, 0221 Oslo, Norway</p>
-            </section>
-            <section>
-                <i class="fa-solid fa-phone"></i>
-                <p>Phone: +47 815 49 300</p>
-            </section>
-            <section>
-                <i class="fa-regular fa-paper-plane"></i>
-                <p>E-mail: contact@nexus.no</p>
-            </section>
-            <section>
-                <i class="fa-solid fa-globe"></i>
-                <p>Website: nexus.no</p>
-            </section>
+            <div class="contact">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Address: Nordic Science Nexus</p>
+                    <p>Museumsveien 3, 0221 Oslo, Norway</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Phone: +47 815 49 300</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <p>E-mail: contact@nexus.no</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Website: nexus.no</p>
+                </div>
+            </div>
             <div class="container">
-                <h1>We'd love to hear from you</h1>
-                <p>Contact us- any questions, suggestions or other inquiries are welcome</p>
-                <form>
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your full name">
+                <div class="contact-form">
+                    <section>
+                    <h1>We'd love to hear from you</h1>
+                    <p>Contact us- any questions, suggestions or other inquiries are welcome</p>
+                    </section>
+                    <form>
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your full name">
 
-                    <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" id="email" name="email" placeholder="Your email address">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address">
 
-                    <label for="subject">SUBJECT</label>
-                    <input type="subject" id="subject" name="subject" placeholder="Your full name">
+                        <label for="subject">SUBJECT</label>
+                        <input type="subject" id="subject" name="subject" placeholder="Your full name">
 
-                    <label for="Message">MESSAGE</label>
-                    <textarea id="text" name="message" placeholder="Message - maximum 500 words"></textarea>
+                        <label for="Message">MESSAGE</label>
+                        <textarea id="text" name="message" placeholder="Message - maximum 500 words"></textarea>
 
-                    <input type="submit" value="Send Message">
-                </form>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                <img class="responsive" src="/img/chris-nguyen-tXmc2mVDxJc-unsplash-min.jpg" alt="a dinosaur skeleton"
             </div>
         </main>
         <footer>
-            <h4>Follow us</h4>
             <div class="social-media">                        
-                <!-- tiktok-ikon -->
-                <a href="https://www.tiktok.com" aria-label="a link to tiktok">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <p>TikTok</p>
-            
-                <!-- Instagram-ikon -->
-                <a href="https://www.instagram.com" aria-label="a link to instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <p>Instagram</p>
-                        
-                <!-- Youtube-ikon -->
-                <a href="htps://youtube.com" aria-label="a link to youtube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <p>YouTube</p>
+                <h4>Follow us:</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.tiktok.com" aria-label="a link to tiktok">
+                        <i class="fa-brands fa-tiktok"></i><p>TikTok</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" aria-label="a link to instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="htps://youtube.com" aria-label="a link to youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p>YouTube</p>
+                        </a>
+                    </li>
+                </ul>  
             </div>
             <ul class="contact-info">
                 <li>Nordic Science Nexus</li>
@@ -106,17 +106,15 @@
                 <li>E-mail: contact@nexus.no</li>
             </ul>
             <ul class="legal-info">                        
-                <li class="privacy"><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li class="terms"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                <li class="contribution"><a href="contribution.html">Contribution</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                <li><a href="contribution.html">Contribution</a></li>
             </ul>
-            <form id="newsletter">
+            <form id="newsletter" class="newsletter-form">
                 <label for="email">Subscribe to our newsletter</label>
                 <input name="email" type="email" id="email" placeholder="Enter your email">
-                <button class="subscribe" type="button">SUBSCRIBE</button>
+                <button class="subscribe-button" type="button">SUBSCRIBE</button>
             </form>
         </footer>
     </body>
 </html>
-
-<!--validator.w3.org valdidate by direct input.-->
