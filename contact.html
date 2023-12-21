@@ -33,47 +33,72 @@
         </header>
         <main>
             <div class="contact">
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Address: Nordic Science Nexus</p>
-                    <p>Museumsveien 3, 0221 Oslo, Norway</p>
+                <div class="contact-info">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="text">
+                        <p><span>Address:</span> Museumsveien 3, 0221 Oslo, Norway</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>Phone: +47 815 49 300</p>
+                <div class="contact-info">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                    <p><span>Phone:</span> +47 815 49 300</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-regular fa-paper-plane"></i>
-                    <p>E-mail: contact@nexus.no</p>
+                <div class="contact-info">
+                    <div class="icon-container">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="text">
+                    <p><span>E-mail:</span> contact@nexus.no</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-globe"></i>
-                    <p>Website: nexus.no</p>
+                <div class="contact-info">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="text">
+                    <p><span>Website:</span> nexus.no</p>
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="contact-form">
+                <div class="contact-us">
                     <section>
                     <h1>We'd love to hear from you</h1>
-                    <p>Contact us- any questions, suggestions or other inquiries are welcome</p>
+                    <p>Contact us - any questions, suggestions or other inquiries are welcome</p>
                     </section>
-                    <form>
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your full name">
+                    <form id="contactForm" class="contactForm" method="post" name="contactForm">
+                        <div class="form-group">
+                            <label class="label" for="name">FULL NAME</label>
+                            <input id="name" class="form-control" type="text" name="name" placeholder="Name">
+                        </div>
 
-                        <label for="email">EMAIL ADDRESS</label>
-                        <input type="email" id="email" name="email" placeholder="Your email address">
+                        <div class="form-group">
+                            <label class="label" for="email">EMAIL ADDRESS</label>
+                            <input id="email" class="form-control" name="email" type="email" placeholder="Email">
+                        </div>
 
-                        <label for="subject">SUBJECT</label>
-                        <input type="subject" id="subject" name="subject" placeholder="Your full name">
+                        <div class="form-group">
+                            <label class="label" for="subject">SUBJECT</label>
+                            <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject">
+                        </div>
 
-                        <label for="Message">MESSAGE</label>
-                        <textarea id="text" name="message" placeholder="Message - maximum 500 words"></textarea>
+                        <div class="form-group">
+                            <label class="label" for="#">MESSAGE</label>
+                            <textarea id="message" class="form-control" name="message" placeholder="Message - maximum 500 words"></textarea>
+                        </div>
 
-                        <input type="submit" value="Send Message">
+                        <div class="form-group">
+                            <input class="btn-primary" type="submit" value="Send Message">
+                        </div>
                     </form>
                 </div>
-                <img class="responsive" src="/img/chris-nguyen-tXmc2mVDxJc-unsplash-min.jpg" alt="a dinosaur skeleton"
+                <img class="responsive" src="/img/chris-nguyen-tXmc2mVDxJc-unsplash-min.jpg" alt="a dinosaur skeleton">
             </div>
         </main>
         <footer>
@@ -112,7 +137,7 @@
             </ul>
             <form id="newsletter" class="newsletter-form">
                 <label for="email">Subscribe to our newsletter</label>
-                <input name="email" type="email" id="email" placeholder="Enter your email">
+                <input  class="email" name="email" type="email" id="email" placeholder="Enter your email">
                 <button class="subscribe-button" type="button">SUBSCRIBE</button>
             </form>
         </footer>
