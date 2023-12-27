@@ -172,6 +172,21 @@ section {
     margin: 10%;
 }
 
+.btn-primary {
+    padding: 10px 40px;
+    background-color: #2e7e5e;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-family: 'opensans', 'verdana', 'sans serif';
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #daa520;
+    color: #001f3f;
+}
 
 /* FOOTER SECTION */
 footer {
