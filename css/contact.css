@@ -60,7 +60,7 @@ nav {
 
 nav a {
     display: block;
-    padding: 10px 15px;
+    padding: 20px 40px;
     font-family: 'montserrat', 'opensans', sans-serif;
     font-weight: bold;
     color: #fff;
@@ -73,9 +73,14 @@ nav a:active {
 
 .hamburger-icon {
     color: #fff;
+    margin: 1rem;
 }
 
-@media (min-width: 768px) {
+i.fas{
+    font-size: 2rem;
+}
+
+@media (min-width: 600px) {
     nav {
         display: block;
         position: static;
@@ -187,7 +192,7 @@ span {
     background-color: #fff;
     margin-bottom: 10%;
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
         grid-template-columns: 1fr;
         padding-left: 0%;
     }
