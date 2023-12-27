@@ -61,7 +61,6 @@ nav {
 nav a {
     display: block;
     padding: 10px 15px;
-    font-size: 1em;
     font-family: 'montserrat', 'opensans', sans-serif;
     font-weight: bold;
     color: #fff;
@@ -89,7 +88,6 @@ nav a:active {
 
     nav a {
         display: inline-block;
-        font-size: 1em;
         font-family: 'montserrat', 'opensans', sans-serif;
         font-weight: bold;
     }
@@ -111,8 +109,16 @@ a:hover {
 
 /* MAIN SECTION */
 
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
 main {
-    margin: 1em;
+    margin: 1rem;
+}
+
+* {
+    font-size: 1rem;
 }
 
 h1,
@@ -121,12 +127,13 @@ h3 {
     font-family: 'playfairdisplay', sans-serif;
     font-weight: lighter;
     color: #001f3f;
+    font-size: 2.2rem;
 }
 
 h1,
-h3,
-th {
+h3 {
     font-weight: lighter;
+    font-size: 1.6rem;
 }
 
 p,
@@ -165,10 +172,20 @@ th {
     border-radius: 15px;
 }
 
+.content1 h4 {
+    font-family: 'playfairdisplay', sans-serif;
+    color: #001f3f;
+    font-weight: lighter;
+}
+
 .content1b {
     padding-top: 2%;
     padding-left: 12%;
     padding-right: 12%;
+}
+
+.content1b h3 {
+    text-align: center;
 }
 
 .content2 {
@@ -223,7 +240,6 @@ th {
     top: 70%;
     left: 50%;
     transform: translate( -50%, -50% );
-    font-size: 3vw;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -256,9 +272,13 @@ h4,
 .newsletter-form {
     margin: 20px;
     margin-top: 30px;
-    font-size: 16px;
     font-family: 'opensans', sans-serif;
     color: #fff;
+}
+
+h4 {
+    margin: 0%;
+    font-size: 1.1rem;
 }
 
 .legal-info li {
@@ -269,17 +289,13 @@ h4,
     margin-bottom: 15px;
 }
 
-h4 {
-    margin: 0;
-}
-
 .social-media li, a {
     display: flex;
     align-items: center;
 }
 
 .social-media i.fa-brands {
-    font-size: 2em;
+    font-size: 1.5rem;
 }
   
 .social-media p {
@@ -302,7 +318,6 @@ label, input, button {
     cursor: pointer;
     border: none;
     border-radius: 15px;
-    font-size: 16px;
     font-family: 'opensans', 'verdana', 'sans serif';
     font-weight: bold;
     color: #001f3f;

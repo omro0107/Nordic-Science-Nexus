@@ -61,7 +61,6 @@ nav {
 nav a {
     display: block;
     padding: 10px 15px;
-    font-size: 1em;
     font-family: 'montserrat', 'opensans', sans-serif;
     font-weight: bold;
     color: #fff;
@@ -89,7 +88,6 @@ nav a:active {
 
     nav a {
         display: inline-block;
-        font-size: 1em;
         font-family: 'montserrat', 'opensans', sans-serif;
         font-weight: bold;
     }
@@ -113,7 +111,7 @@ a:hover {
 
 html {
     font-size: calc(60% + 0.8vmin);
-  }
+}
 
 main {
     margin: 10%;
@@ -143,6 +141,7 @@ li {
 
 ul {
     list-style: none;
+    padding-left: 0%;
 }
 
 .list {
@@ -165,9 +164,13 @@ h4,
 .newsletter-form {
     margin: 20px;
     margin-top: 30px;
-    font-size: 16px;
     font-family: 'opensans', sans-serif;
     color: #fff;
+}
+
+h4 {
+    margin: 0%;
+    font-size: 1.1rem;
 }
 
 .legal-info li {
@@ -178,18 +181,13 @@ h4,
     margin-bottom: 15px;
 }
 
-h4 {
-    margin: 0;
-    font-size: 1.1rem;
-}
-
 .social-media li, a {
     display: flex;
     align-items: center;
 }
 
 .social-media i.fa-brands {
-    font-size: 2em;
+    font-size: 1.5rem;
 }
   
 .social-media p {
@@ -212,7 +210,6 @@ label, input, button {
     cursor: pointer;
     border: none;
     border-radius: 15px;
-    font-size: 16px;
     font-family: 'opensans', 'verdana', 'sans serif';
     font-weight: bold;
     color: #001f3f;
