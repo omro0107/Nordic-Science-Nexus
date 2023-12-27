@@ -149,6 +149,7 @@ ul {
     border-color: #daa520;
     border-radius: 15px;
     margin: 5%;
+    margin-bottom: 10%;
 
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
