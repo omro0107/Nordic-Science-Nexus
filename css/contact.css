@@ -1,19 +1,19 @@
 @font-face {
-    src: url('../webfontkit/montserrat.woff2') format('woff2'),;
+    src: url('../webfontkit/montserrat.woff2') format('woff2');
     font-family: 'montserrat';
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    src: url('../webfontkit/playfairdisplay.woff2') format('woff2'),;
+    src: url('../webfontkit/playfairdisplay.woff2') format('woff2');
     font-family: 'playfairdisplay';
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    src: url('../webfontkit/opensans.woff2') format('woff2'),;
+    src: url('../webfontkit/opensans.woff2') format('woff2');
     font-family: 'opensans';
     font-style: normal;
     font-weight: normal;
@@ -29,9 +29,9 @@ header {
     object-fit: cover;
     width: 100%;
     height: 11rem;
+    margin-bottom: 5%;
     background-image: url('../img/gregoire-jeanneau-9sxeKzuCVoE-unsplash-min.jpg');
     background-size: cover;
-    margin-bottom: 5%;
 }
 
 .logo {
@@ -50,8 +50,8 @@ nav,
 
 #menu-checkbox:checked ~ nav {
     display: block;
-    color: #fff;
     background-color: #001f3f;
+    color: #fff;
 }
 
 nav {
@@ -72,8 +72,8 @@ nav a:active {
 }
 
 .hamburger-icon {
-    color: #fff;
     margin: 1rem;
+    color: #fff;
 }
 
 i.fas{
@@ -127,10 +127,10 @@ main {
 }
 
 h1 {
-    font-family: 'playfairdisplay', sans-serif;
-    color: #001f3f;
-    font-weight: lighter;
     font-size: 2.2rem;
+    font-family: 'playfairdisplay', sans-serif;
+    font-weight: lighter;
+    color: #001f3f;
 }
 
 p {
@@ -153,9 +153,9 @@ ul {
 
 .icon-container {
     display: inline-block;
+    padding: 15px;
     background-color: #2e7e5e;
     border-radius: 50%;
-    padding: 15px;
 }
   
 .fa-solid,
@@ -184,13 +184,13 @@ span {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    margin-bottom: 10%;
+    padding-left: 3%;
+    background-color: #fff;
     border-width: 2px;
     border-style: solid;
     border-color: #daa520;
-    margin: 5%;
-    padding-left: 3%;
-    background-color: #fff;
-    margin-bottom: 10%;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -203,19 +203,21 @@ span {
 }
 
 .form-group {
-    font-family: 'opensans';
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
+    font-family: 'opensans';
 }
 
-input[class=form-control] {
+.form-control {
+    padding-top: 10px;
     border: none;
     border-bottom: 1px solid rgb(212, 212, 212);
 }
 
-input[class=form-control]:focus {
-    border: 3px solid #001f3f;
+.form-control:focus {
+    outline: none;
+    border: 3px solid #2e7e5e;
 }
 
 .label {
@@ -223,15 +225,15 @@ input[class=form-control]:focus {
 }
 
 textarea {
+    resize: none;
+    box-sizing: border-box;
     width: 100%;
     height: 150px;
     padding: 12px 20px;
-    box-sizing: border-box;
+    background-color: #f8f8f8;
     border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-  }
+}
 
 .btn-primary {
     padding: 10px 40px;
@@ -321,8 +323,13 @@ label, input, button {
     color: #fff;
 }
 
-input[type="email"] {
+input.subscribe-email {
     width: 200px;
     padding: 14px;
     border-radius: 15px;
+}
+
+.subscribe-email:focus {
+    outline: none;
+    border: 3px solid #daa520;
 }

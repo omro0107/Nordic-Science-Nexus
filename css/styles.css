@@ -1,19 +1,19 @@
 @font-face {
-    src: url('../webfontkit/montserrat.woff2') format('woff2'),;
+    src: url('../webfontkit/montserrat.woff2') format('woff2');
     font-family: 'montserrat';
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    src: url('../webfontkit/playfairdisplay.woff2') format('woff2'),;
+    src: url('../webfontkit/playfairdisplay.woff2') format('woff2');
     font-family: 'playfairdisplay';
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    src: url('../webfontkit/opensans.woff2') format('woff2'),;
+    src: url('../webfontkit/opensans.woff2') format('woff2');
     font-family: 'opensans';
     font-style: normal;
     font-weight: normal;
@@ -29,9 +29,9 @@ header {
     object-fit: cover;
     width: 100%;
     height: 11rem;
+    margin-bottom: 5%;
     background-image: url('../img/gregoire-jeanneau-9sxeKzuCVoE-unsplash-min.jpg');
     background-size: cover;
-    margin-bottom: 5%;
 }
 
 .logo {
@@ -45,13 +45,13 @@ header {
 /* place menu at right bottom corner of header*/
 nav,
 #menu-checkbox {
-    display: none; 
+    display: none;
 }
 
 #menu-checkbox:checked ~ nav {
     display: block;
-    color: #fff;
     background-color: #001f3f;
+    color: #fff;
 }
 
 nav {
@@ -72,8 +72,8 @@ nav a:active {
 }
 
 .hamburger-icon {
-    color: #fff;
     margin: 1rem;
+    color: #fff;
 }
 
 i.fas{
@@ -129,16 +129,16 @@ main {
 h1,
 h2,
 h3 {
+    font-size: 2.2rem;
     font-family: 'playfairdisplay', sans-serif;
     font-weight: lighter;
     color: #001f3f;
-    font-size: 2.2rem;
 }
 
 h1,
 h3 {
-    font-weight: lighter;
     font-size: 1.6rem;
+    font-weight: lighter;
 }
 
 p,
@@ -153,8 +153,8 @@ ul {
 }
 
 th {
-    text-align: right;
     padding-right: 5%;
+    text-align: right;
 }
 
 .responsive {
@@ -179,14 +179,14 @@ th {
 
 .content1 h4 {
     font-family: 'playfairdisplay', sans-serif;
-    color: #001f3f;
     font-weight: lighter;
+    color: #001f3f;
 }
 
 .content1b {
     padding-top: 2%;
-    padding-left: 12%;
     padding-right: 12%;
+    padding-left: 12%;
 }
 
 .content1b h3 {
@@ -196,8 +196,8 @@ th {
 .content2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 300px;
-    justify-content: space-between
 }
 
 .content2 h3 {
@@ -213,8 +213,8 @@ th {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 20px;
     align-self: stretch;
+    grid-gap: 20px;
 }
 
 .container2 {
@@ -337,4 +337,9 @@ input[type="email"] {
     width: 200px;
     padding: 14px;
     border-radius: 15px;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border: 3px solid #daa520;
 }
