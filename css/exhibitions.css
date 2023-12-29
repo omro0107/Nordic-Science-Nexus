@@ -160,7 +160,7 @@ ul {
     border-width: 3px;
     border-style: solid;
     border-color: #daa520;
-    border-radius: 15px;
+    border-radius: 18px;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -266,4 +266,17 @@ input[type="email"] {
 input[type="email"]:focus {
     outline: none;
     border: 3px solid #daa520;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

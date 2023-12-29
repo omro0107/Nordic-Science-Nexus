@@ -333,3 +333,20 @@ input.subscribe-email {
     outline: none;
     border: 3px solid #daa520;
 }
+
+@media (max-width: 600px) {
+    .contact {
+        display: grid;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
