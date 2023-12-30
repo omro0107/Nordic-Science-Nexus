@@ -170,7 +170,7 @@ ul {
 
 .text p {
     color: #001f3f;
-    vertical-align: baseline;
+    white-space: nowrap;
 }
 
 span {
@@ -283,7 +283,7 @@ h2 {
 
 .contact-info li {
     margin-bottom: 15px;
-    vertical-align: baseline;
+    white-space: nowrap;
 }
 
 .social-media li, a {
