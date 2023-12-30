@@ -335,18 +335,16 @@ input.subscribe-email {
 }
 
 @media (max-width: 600px) {
-    .contact {
-        display: grid;
-    }
-
-    footer {
+        footer {
         flex-direction: column;
         align-items: center;
     }
 
-    .newsletter-form {
+    .newsletter-form,
+    .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 }
