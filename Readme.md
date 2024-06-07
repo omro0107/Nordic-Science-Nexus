@@ -1,4 +1,4 @@
-# Rainy Days
+# Nordic Science Nexus
 
 This is a school project where I created a website using HTML and CSS.
 
