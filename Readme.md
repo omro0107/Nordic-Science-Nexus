@@ -47,7 +47,7 @@ git clone https://github.com/omro0107/Nordic-Science-Nexus.git
 2. Navigate to the project directory
 
 ```bash
-cd Nordi-Science-Nexus
+cd Nordic-Science-Nexus
 ```
 
 3. Install the dependencies
